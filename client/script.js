@@ -1,15 +1,17 @@
 let inputString = "";
 let index = 0;
 let delay = 100;
+let button;
 
 function setup() {
   createCanvas(400, 400);
   textSize(32);
   getTextFromAPI();
+  button = createButton("Push Me!");
 }
 
 function draw() {
-  background(255);
+  background("Purple");
   let displayString = "";
   let words = inputString.split(" ");
   let currentLine = "";
